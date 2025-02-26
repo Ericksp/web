@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parroquia Santo Toribio - Chosica </title>
+    <link rel="stylesheet" href="../css/stylenosotros.css">
+    <link rel="stylesheet" href="../css/styleservicios.css">
+    <link rel="stylesheet" href="../css/stylecontacto.css">
+    <link rel="stylesheet" href="../css/calendar.css">
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="jquery.ui.datepicker-es.js"></script>
+
+    <script>
+     jQuery(function($){$.datepicker.regional['es'] = {
+      closeText: 'Cerrar',
+      prevText: '&#x3C;Ant',
+      nextText: 'Sig&#x3E;',
+      currentText: 'Hoy',
+      monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
+      'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+      monthNamesShort: ['ene','feb','mar','abr','may','jun',
+      'jul','ago','sep','oct','nov','dic'],
+      dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+      dayNamesShort: ['dom','lun','mar','mié','jue','vie','sáb'],
+      dayNamesMin: ['D','L','M','X','J','V','S'],
+      weekHeader: 'Sn',
+      dateFormat: 'dd/mm/yy',
+      firstDay: 1,
+      isRTL: false,
+      showMonthAfterYear: false,
+      yearSuffix: ''};
+  $.datepicker.setDefaults($.datepicker.regional['es']);
+});
+    </script>
+    <script>
+        $(function() {$( "#datepicker" ).datepicker({dateFormat: 'dd-mm-yy',showWeek: true,minDate: 0,});});
+        $(function() {$( "#datepicker" ).datepicker( $.datepicker.regional[ "Es" ]);});
+        </script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <script src="https://kit.fontawesome.com/92d9c1ec7c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/cropped-icono-agustinos-32x32.png" sizes="32x32" type="image/ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../js/siguiente.js"></script>
+    <script src="../js/atras.js"></script>
+    <script src="../js/calendar.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a class="logo"><img src="../img/logos2.png" alt=""></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="/Web Barberia/img/menu.png" class="menu-icon" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="../html/indexservicio.html">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="/Web Barberia/PHP/indexcuenta.php">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <p></p>
+            <h1><img src="../img/LOGOCHOSICA.png" alt=""></h1>
+    </div>
+    </header>
+    <div class="general">
+        <div class="text">
+            <section class="form-register">
+                <form  id="servicioForm" >
+                <h2>Registre sus datos : </h2>
+                <p>Llene el formulario para poder adquirir el servicio:</p>
+                    <label for="nombre">Nombre(s):</label><br>
+                    <input class="txtbox" type="text" id="nombre" name="nombre" required placeholder="Esriba su(s) nombres(s)" ><br>
+                    
+                    <label for="nombre">Apellidos</label><br>
+                    <input class="txtbox" type="text" id="apellidos" name="apellidos" required placeholder="Esriba su(s) apellido(s)"><br>
+
+                    <label for="email">Correo electrónico:</label><br>
+                    <input class="txtbox" type="email" id="email" name="email"  required placeholder="Esriba su correo electrónico"><br>
+
+                    <label for="email"> Número de Celular:</label><br>
+                    <input class="txtbox" type="text" id="cel" name="cel" required placeholder="Esriba su número celular"><br>
+                
+                    <p>Datos de la persona que se ofrecerá la misa :</p>
+                    <label for="nombre">Nombre(s):</label><br>
+                    <input class="txtbox" type="text" id="nombre2" name="nombre2" required placeholder="Esriba su(s) nombres(s)" ><br>
+                    <label for="nombre">Apellidos</label><br>
+                    <input class="txtbox" type="text" id="apellidos2" name="apellido2" required placeholder="Esriba su(s) apellido(s)"><br><br>
+
+                    <button type="button" onclick="siguiente()" class="btn-1">Siguiente</button>
+                </form>
+
+            </section>
+            <section class="form-register">
+                <form id="segundoPaso" style="display: none;">
+                    <h2>Registre sus datos : </h2>
+                <p>Llene el formulario para poder adquirir el servicio:</p>
+                <label for="nombre2">¿Que Tipo de misa desea ? :</label><br><br>
+                    <label  for="opciones">Selecciona una opción:</label>
+                    <select class="txtbox" id="opciones" name="opciones">
+                        <option value="opcion1">Misa Personales - s/ 100.00</option>
+                        <option value="opcion2">Misas comunitarias - s/20.00 </option><br><br>
+            </section>
+                    </select> <br>
+                    <p>Seleccione la fecha de la misa :
+                        <input type="text" id="datepicker">
+                    
+                    </p>
+                <button type="button" onclick="atras()" class="btn-1">Atras</button>
+                <button type="submit" class="btn-1">Pagar</button>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a>
+                        <img src="../img/logos2.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una comunidad que busca tener una sola alma y un solo corazón hacia Dios (San Agustín, Regla 3).</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/Agustinosperu/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/agustinosperu/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/channel/UC5NzbsiOL805u9Dx7TlUnjQ" target="_blank" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Parroquia Santo Toribio - Chosica</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

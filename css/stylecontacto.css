@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.form-register{
+    width: 100%;
+    margin-right: 100px;
+}
+
+.txtbox{
+    width: 80%;
+    background: #F9FAFC;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.lrgbox{
+    width: 80%;
+    background: #F9FAFC;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 0px;
+    text-size-adjust: initial;
+    text-align: justify;
+    height: 120px;
+    padding: 8px;
+    padding-bottom: 100px;
+    text-size-adjust: initial;
+    
+}
+
+
+.btnreg{
+    width: 15%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 15px;
+    background: #F9FAFC;
+    border-radius: 10px;
+}
+
+#mapa{
+    width: 100%;
+    height: auto; overflow: hidden;
+    padding: 30px;
+    background: #0a1a2a;
+    
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(../img/BANNER-CHOSICA-scaled.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 63vh;
+        display: flex;
+        align-items: center;
+}
+
+.header img{
+    width: 80%;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #CE9678;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    align-items: center;
+    font-size: 75px;
+    line-height: 50px;
+    color:#F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.general{
+    display: flex;
+    background-color: #E1E2E6;
+}
+
+.img{
+    width: 50%;
+    background-image: url(img/somos1.jpg);
+}
+
+.text{
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: left;
+}
+
+.text-2{
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.text-2 a i{
+    color: black;
+    margin-right: 20px;
+}
+
+h2{
+    font-size: 45px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+
+  .titulo {
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 100%;
+    margin: 10;
+    text-align: center;
+    z-index: 1;
+  }
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-width: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .general{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .text-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .img{
+        display: none;
+    }
+
+    .card {
+      width: calc(100% - 20px);
+      margin-bottom: 40px;
+      top: 40px;
+    }
+
+    .titulo {
+        top: 10px;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+        font-size:40px;
+        text-align: center;
+      }
+
+      .card-text h2 {
+        font-size: 20px;
+        line-height: 1;
+      }
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+
+}
